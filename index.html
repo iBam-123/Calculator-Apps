@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="stylesheet.css" class="ref">
+</head>
+<body>
+    <h1>Calculator Apps</h1>
+    <div class="kalkulator">
+        <input type="text" class="screen" value="0" disabled>
+        <div class="keys">
+            <div class="container">
+                <button class="clear" onclick="button_clear()">AC</button>
+                <button class="delete">Del</button>
+                <button class="persent" value="%" onclick="button_number('%')">%</button>
+                <button class="operation" value="/" onclick="button_number('/')">&divide;</button>
+            </div>
+            <div class="container">
+                <button class="number" value="7" onclick="button_number(7)">7</button>
+                <button class="number" value="8" onclick="button_number(8)">8</button>
+                <button class="number" value="9" onclick="button_number(9)">9</button>
+                <button class="operation" value="*" onclick="button_number('*')">&times;</button>
+            </div>
+            <div class="container">
+                <button class="number" value="4" onclick="button_number(4)">4</button>
+                <button class="number" value="5" onclick="button_number(5)">5</button>
+                <button class="number" value="6" onclick="button_number(6)">6</button>
+                <button class="operation" value="-" onclick="button_number('-')">-</button>
+            </div>
+            <div class="container">
+                <button class="number" value="1" onclick="button_number(1)">1</button>
+                <button class="number" value="2" onclick="button_number(2)">2</button>
+                <button class="number" value="3" onclick="button_number(3)">3</button>
+                <button class="operation" value="+" onclick="button_number('+')">+</button>
+            </div>
+            <div class="container">
+                <button class="number" value="000">000</button>
+                <button class="number" value="0" onclick="button_number(0)">0</button>
+                <button class="operation" value="." onclick="button_number('.')">.</button>
+                <button class="equel" onclick="button_number('=')">=</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
